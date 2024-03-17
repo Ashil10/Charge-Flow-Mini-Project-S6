@@ -26,15 +26,6 @@ Ensure you have the following software and tools installed:
 - **Framework:** Flask
 - **Database:** MySQL
 
-## Installation
-
-Follow these steps to set up the Werego project:
-
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/shezi7025/werego.git
-
 
 ## Usage
 
