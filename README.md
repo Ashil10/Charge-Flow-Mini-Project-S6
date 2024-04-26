@@ -24,7 +24,7 @@ To run ChargeFlow locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Ashil10/Mini-Project-S6.git
+git clone https://github.com/Ashil10/Charge-Flow-Mini-Project-S6.git
 ```
 
 2. Navigate to the project directory:
