@@ -33,7 +33,7 @@
       <form action="{{ url_for('search_stations') }}" method="post">
       <h1>Find Your Charge Point</h1>
         <label for="city">Select a city: </label>
-        <select id="city" name="city" required>
+        <select id="position" name="position" required>
           <option value="">--Select a city--</option>
           <option value="thiruvananthapuram">Thiruvananthapuram</option>
           <option value="Kollam">Kollam</option>
@@ -70,7 +70,6 @@
   <footer>
     <div class="footer-content">
       <h3>footer</h3>
-      <p>&copy; 2023 EV Charging Station Finder. All rights reserved.</p>
     </div>
   </footer>
 </html>

@@ -78,7 +78,19 @@
             </div>
        -->
           </nav>
-        
+        <style>
+          select[name="emergency_port"] {
+  width: 400px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  margin-left: 400px;
+  margin-bottom: 20px;
+}
+        </style>
 
 
 <div>
@@ -90,8 +102,16 @@
     <label for="city">City:</label><br>
     <input type="text" id="city" name="city" value="{{ request.args.get('city') }}" readonly>
                 
+    
+    <label for="charger_type">Want Emergency port:</label><br>
+        <select name="emergency_port" id="emergency_port"><br>
+          <option value="">--Select--</option><br>
+          <option value="yes">yes</option><br>
+        </select><br>
+
     <label for="available_ports">Selected Port:</label><br>
     <input type="text" id="available_ports" name="available_ports" value="{{ request.args.get('available_ports') }}" readonly>
+
     <label for="booking_date">Booking Date:</label><br>
     <input type="date" id="booking_date" name="booking_date" required>
     <label for="time_from">Time from:</label><br>
@@ -147,6 +167,7 @@
             
               function bookNow() {
                 // Get the values of all the inputs
+                const emergency_port = $("#emergency_port").val();
                 const available_port = $("#available_ports option:selected").val();
                 const booking_date = $("#my_date_picker1").val();
                 const time_from = $("#time_from").val();

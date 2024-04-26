@@ -131,6 +131,52 @@ VALUES
 (70, 'VWX2 Charging Station', '6873 Cedar St', 'Kozhikode', 'DC Fast Charging', 5, 'Active'),
 (71, 'YZA2 Charging Station', '7075 Ash St', 'Thrissur', 'AC Level 1 Charging', 3, 'Active');
 
+INSERT INTO admin_charging_station_list (id, station_name, address, city, charger_type, available_ports, status,latitude,longitude)
+VALUES
+(101, 'EVOK Charging Station Pariyaram', 'SH21, Athirappilly, 680724', 'Athirappilly', 'AC Level 1 Charging', 4, 'Active',10.290498325721375, 76.51958865300352,'yes'),
+(102, 'Zeon Charging Station Karukutty', '69FG+56H Annapoorna Cafe Kerala 683572', 'Karukutty', 'AC Level 2 Charging', 2, 'Under Maintenance',10.22294715569544, 76.37587705713896,'yes'),
+(103, 'Tata Power Charging Station Aluva', 'Building No 18/615/1, Kerala 683101', 'Aluva', 'DC Fast Charging', 6, 'Active',10.108281958158196, 76.34941460823403,'yes'),
+(104, 'EVOK Charging Station Aluva', '38JR+Q22, Ambattukavu, Choornikkara, Aluva, Kerala 683501', 'Aluva', 'AC Level 1 Charging', 3, 'Out of Service',10.084943311520357, 76.34075297803813,'yes'),
+(105, 'EVOK Charging Station Kakkanad', '28RQ+5CC, Karippassery, North Kalamassery, Kerala 682021', 'Kakkanad', 'AC Level 2 Charging', 1, 'Active',10.0435979895523, 76.3383314605623,'yes'),
+(106, 'Electric Vehicle Charging Station Muttom', 'Muttom Metro Station, Choornikkara, Muttom, Kerala 683501', 'Muttom', 'DC Fast Charging', 5, 'Active',10.07568749183402, 76.33393105098415,'yes'),
+(107, 'Electric Vehicle Charging Station Edappally', '28G5+RV7, near to Lulu Hyper Market, Edappally, Ernakulam, Kerala 682024', 'Edappally', 'AC Level 1 Charging', 2, 'Under Maintenance',10.03245683941473, 76.30999830080177,'no'),
+(108, 'Zeon Charging Station Edappally', 'Gokul Oottupura Veg Restaurant, NH66, Padivattom, Edappally, Ernakulam, Kerala 682024', 'Edappally', 'AC Level 2 Charging', 4, 'Active',10.015763868129744, 76.31317308055878,'no'),
+(109, 'KSEB Charging Station Palarivattom', '2843+3XX, Palarivattom, Kochi, Ernakulam, Kerala 682017', 'Palarivattom', 'DC Fast Charging', 3, 'Out of Service',10.012340866627099, 76.302453704504,'yes'),
+(110, 'EESL Charging Station Menaka', 'X7GG+XX7, Menaka, Marine Drive, Kochi, Ernakulam, Kerala 682031', 'Marine Drive', 'AC Level 1 Charging', 1, 'Active',9.98552467451153, 76.27674578750958,'yes'),
+(111, 'Electric Vehicle Charging Station Panampilly Nagar', 'HB 39, South Bridge Ave Kerala 682036', 'Panampilly Nagar', 'AC Level 1 Charging', 4, 'Active',9.972548985693248, 76.29301070299557,'yes'),
+(112, 'EVOK Charging Station Thammanam', 'X8M8+XFR geethanjali, Geethanjali Rd, Kerala 682032', 'Thammanam', 'AC Level 2 Charging', 2, 'Under Maintenance',9.989708906939256, 76.31783722948006,'yes'),
+(113, 'PulsePower Charging Station Thiruvaniyoor', 'Kochi - Madurai - Dhanushkodi Rd, Mamala, Thiruvaniyoor, Kerala 682305', 'Thiruvaniyoor', 'DC Fast Charging', 6, 'Active',9.952587817450622, 76.3848358246848,'yes'),
+(114, 'Electric Vehicle Charging Station Thiruvankulam', 'AMJ Arcade, Kerala 682312', 'Thripppunithura', 'AC Level 1 Charging', 3, 'Out of Service',9.934608998438321, 76.38823589540587,'yes'),
+(115, 'Electric Vehicle Charging Station Kizhakkambalam', '2CJ4+VXV, Kizhakkambalam, Kerala 683562', 'Kizhakkambalam', 'AC Level 2 Charging', 1, 'Active',10.040042265321604, 76.40990831101807,'no'),
+(116, 'KSEB Charging Station Pezhakkappilly', 'SH 1, Pezhakkappilly, Kerala 686661', 'Pezhakkappilly', 'DC Fast Charging', 5, 'Active',10.019835479880864, 76.56391727403943,'no'),
+(117, 'EVOK Charging Station Nellikkuzhi', '3J93+W4F, Verpati, Kerala 686691', 'Nellikkuzhi', 'AC Level 1 Charging', 2, 'Under Maintenance',10.074406875301424, 76.6031952689804,'no'),
+(118, 'KSEB Charging Station Kothamangalam', 'Sub Power Station, Kothamangalam, Kerala 686691', 'Kothamangalam', 'AC Level 2 Charging', 4, 'Active',10.059026180283585, 76.6164131942485,'yes'),
+(119, 'Electric Vehicle Charging Station Vannapuram', 'XQQR+WRP, Vannappuram, Kerala 685607', 'Vannapuram', 'DC Fast Charging', 3, 'Out of Service',10.000131545896231, 76.79180012397113,'yes'),
+(120, 'KSEB Charging Station Vazhithala', 'VJMX+X6W, Vazhithala, Manakkad, Kerala 685583', 'Vazhithala', 'AC Level 1 Charging', 1, 'Active',9.886439907788942, 76.64998883472381,'yes'),
+(121, 'TATA Charging Station Thodupuzha', 'VPR4+QQC J K Buildings, Thodupuzha, Kerala 685584', 'Thodupuzha', 'AC Level 1 Charging', 4, 'Active',9.900645026256841, 76.70698041340644,'yes'),
+(122, 'KSEB Charging Station Thodupuzha', 'VPR5+R6C, Thodupuzha, Kerala 685608', 'Thodupuzha', 'AC Level 2 Charging', 3, 'Active',9.89285818173515, 76.70825350365425,'yes'),
+(123, 'Zeon Charging Station Thodupuzha', 'Joance Regency, Kerala 685608', 'Thodupuzha', 'DC Fast Charging', 2, 'Under Maintenance',9.895196156313608, 76.71607536136626,'no'),
+(124, 'Electric Vehicle Charging Station Idukki', 'RXXH+P37, Idukki Twp, Kerala 685602', 'Idukki', 'AC Level 1 Charging', 4, 'Active',9.866758886077996, 76.97609562060475,'no'),
+(125, 'GO EC Charging Station Neendoor', 'Kalladanthiyil Building, Kerala 686601', 'Neendoor', 'AC Level 2 Charging', 5, 'Active',9.710833691105341, 76.49177228675914,'yes'),
+(126, 'KSEB Charging Station Thellakom', 'JGXX+57P, Thellakom, Kerala 686630', 'Thellakom', 'DC Fast Charging', 2, 'Out of Service',9.669837925262199, 76.54140656551809,'no'),
+(127, 'KSEB Charging Station Perumbaikad', 'JGMF+4Q2, Medical College Rd, Kerala 686008', 'Perumbaikod', 'AC Level 1 Charging', 1, 'Active',9.651845114950948, 76.52750054843807,'no'),
+(128, 'KSEB Charging Station Thiruvanchoor', 'JH5F+FQP, Naalumani Kaattu, Kerala 686019', 'Thiruvanchoor', 'AC Level 2 Charging', 3, 'Under Maintenance',9.616139929453443, 76.58053232572766,'yes'),
+(129, 'EVOK Charging Station Kumaranalloor', 'JG2J+HQG, Kumaranalloor, Kottayam, Kerala 686016', 'Kumaranalloor', 'DC Fast Charging', 6, 'Active',9.608752022862033, 76.53162991586508,'no'),
+(130, 'Zeon Charging Station Kottayam', 'Hotel Aida, Aida Junction, SH 1, Kodimatha, Kottayam, Kerala 686001', 'Kottayam', 'AC Level 1 Charging', 4, 'Active',9.592031428401, 76.517432442034,'yes'),
+(131, 'Tata Power Charging Station Kottayam', 'HGF9+GMR, Kollam - Theni Hwy, Kodimatha, Kottayam, Kerala 686004', 'Kottayam', 'AC Level 2 Charging', 2, 'Under Maintenance',9.573547893564315, 76.51950193217004,'yes'),
+(132, 'Electric Vehicle Charging Station Muppaikad', '287C, opposite Malayala Manorama, Kodimatha, Kottayam, Muppaikad, Kerala 686013', 'Muppaikad', 'DC Fast Charging', 3, 'Active',9.5692338759408, 76.5199670912158,'yes'),
+(133, 'Electric Vehicle Charging Station Kaduvakulam', 'HG3M+W9M, Kerala 686004', 'Kollam', 'AC Level 1 Charging', 5, 'Out of Service',9.5562119809949, 76.53335020527894,'yes'),
+(134, 'KSEB Charging Station Kanjikuzhi', 'HGPV+CRR, Puthuppally Rd, Kanjikuzhi, Kottayam, Kerala 686002', 'Kanjikuzhi', 'AC Level 2 Charging', 1, 'Active',9.591017511278965, 76.54288828883404,'no'),
+(135, 'GO EC Charging Station Ponkunnam', 'HP8R+HJH, Ponkunnam, Kerala 686506', 'Ponkunnam', 'DC Fast Charging', 4, 'Active',9.574521983076977, 76.73940927984054,'no'),
+(136, 'KSEB Charging Station Thiruvalla', '9HPM+2PP, Thiruvalla, Kerala 689105', 'Thiruvalla', 'AC Level 1 Charging', 2, 'Under Maintenance',9.406726160930615, 76.59262169757012,'yes'),
+(137, 'KSEB Charging Station Ramapuram', 'QMW7+V88, Pala Ramapuram Rd, Ramapuram, Kerala 686576', 'Pala', 'AC Level 2 Charging', 3, 'Active',9.808943999253382, 76.67276715478164,'yes'),
+(138, 'KSEB Charging Station Pala', 'PM5G+P9V, Pala Main Rd, Kottaramattom, Pala, Kerala 686575', 'Pala', 'DC Fast Charging', 6, 'Out of Service',9.725034060548715, 76.68306683680875,'yes'),
+(139, 'KSEB Charging Station Erattupetta', 'MQPH+3HV, Aruvithura Crossway Rd, Aruvithura, Erattupetta, Kerala 686122', 'Erattupeta', 'AC Level 1 Charging', 1, 'Active',9.691659055501521, 76.78059920310864,'no'),
+(140, 'Zeon Charging Station Mundakkayam', 'RD Cinemas, Kerala 686513', 'Mundakkayam', 'AC Level 2 Charging', 4, 'Under Maintenance',9.551683619251584, 76.8786796410133,'yes'),
+(141, 'KSEB Charging Station Muvattupuzha', 'Bus Stand, 130, MC Rd, Junction, Muvattupuzha, Kerala 686673', 'Muvattupuzha', 'DC Fast Charging', 5, 'Active',9.98307328127957, 76.57910715694901,'no'),
+(142, 'KSEB Charging Station Perumbavoor', '4F6H+QJ5, M C, SH 1, Kerala 683542', 'Perumbavoor', 'AC Level 1 Charging', 3, 'Active',10.113200540296589, 76.48021718230376,'yes'),
+(143, 'GOEC Charging Station Perumbavoor', 'P.O, Mudickal, Perumbavoor, Kerala 683542', 'Perumbavoor', 'AC Level 1 Charging', 3, 'Active',10.127765033102104, 76.44657888089085,'yes');
+
 
 
 
@@ -159,6 +205,36 @@ INSERT INTO `login` (`username`, `password`, `usertype`) VALUES
 ('guest', 'guestpass', 'user'),
 ('user3', 'pass789', 'user'),
 ('user4', 'password1234', 'user');
+
+INSERT INTO login (username, password, usertype) VALUES
+('KSEB Charging Station Pezhakkappilly','123','station'),
+('EVOK Charging Station Nellikkuzhi','123','station'),
+('KSEB Charging Station Kothamangalam','123','station'),
+('Electric Vehicle Charging Station Vannapuram','123','station'),
+('KSEB Charging Station Vazhithala','123','station'),
+('TATA Charging Station Thodupuzha','123','station'),
+('KSEB Charging Station Thodupuzha','123','station'),
+('Zeon Charging Station Thodupuzha','123','station'),
+('Electric Vehicle Charging Station Idukki','123','station'),
+('GO EC Charging Station Neendoor','123','station'),
+('KSEB Charging Station Thellakom','123','station'),
+('KSEB Charging Station Perumbaikad','123','station'),
+('KSEB Charging Station Thiruvanchoor','123','station'),
+('EVOK Charging Station Kumaranalloor','123','station'),
+('Zeon Charging Station Kottayam','123','station'),
+('Tata Power Charging Station Kottayam','123','station'),
+('Electric Vehicle Charging Station Muppaikad','123','station'),
+('Electric Vehicle Charging Station Kaduvakulam','123','station'),
+('KSEB Charging Station Kanjikuzhi','123','station'),
+('GO EC Charging Station Ponkunnam','123','station'),
+('KSEB Charging Station Thiruvalla','123','station'),
+('KSEB Charging Station Ramapuram','123','station'),
+('KSEB Charging Station Pala','123','station'),
+('KSEB Charging Station Erattupetta','123','station'),
+('Zeon Charging Station Mundakkayam','123','station'),
+('KSEB Charging Station Muvattupuzha','123','station'),
+('KSEB Charging Station Perumbavoor','123','station'),
+('GOEC Charging Station Perumbavoor','123','station');
 
 /*Table structure for table `user` */
 

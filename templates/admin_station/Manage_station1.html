@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">  
-  <link rel="stylesheet" href="/static/admin/Manage-station.css">
+  <link rel="stylesheet" href="/static/admin_station/Manage-station1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel=" icon" href="/static/temp/assets/images/icon.ico"/>
     <meta charset="UTF-8">
@@ -52,12 +53,12 @@
 
   <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
   <div class="list-group list-group-flush">
-    <a href="/admin-home" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-    <a href="/user-list" class="list-group-item list-group-item-action bg-light">Manage users</a>
-    <a href="/Manage_station" class="list-group-item list-group-item-action bg-light">Manage Station</a>
-    <a href="/view_booking" class="list-group-item list-group-item-action bg-light">view booking</a>
-    <a href="/view_feedback" class="list-group-item list-group-item-action bg-light">view feedback</a>
-    <a href="/logout" class="list-group-item list-group-item-action bg-light">logout</a>
+    <a href="/station-dashboard" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+    <!--<a href="/user-list1" class="list-group-item list-group-item-action bg-light">Manage users</a>-->
+    <a href="/Manage_station1" class="list-group-item list-group-item-action bg-light">Manage Station</a>
+    <!--<a href="/view_booking1" class="list-group-item list-group-item-action bg-light">view booking</a>
+    <a href="/view_feedback1" class="list-group-item list-group-item-action bg-light">view feedback</a>
+    <a href="/logout" class="list-group-item list-group-item-action bg-light">logout</a>-->
 
    
     
@@ -88,7 +89,7 @@
   </nav>
 
 
-  <form action="" method="get"><table id="myTable" class="display" width="600" border="1" class="table table-active">
+ <!--<form action="" method="get"><table id="myTable" class="display" width="600" border="1" class="table table-active">
     <tr>
       <th scope="col">SL.NO</th>
       <th scope="col">STATION NAME</th>
@@ -97,11 +98,7 @@
        <th scope="col">CHARGE TYPE</th>
        <th scope="col">AVAILABLE PORTS</th>
        <th scope="col">STATUS</th>
-     <!-- <th scope="col">POST</th>
-      <th scope="col">DISTRICT</th>
-      <th scope="col">STATE</th>
-      <th scope="col">EMAIL</th>
-      <th scope="col">PHONE</th> -->
+  
       </tr>
       {% for i in data %}
     <tr>
@@ -112,18 +109,37 @@
       <td>{{ i.charger_type }}</td>
       <td>{{ i.available_ports }}</td>
       <td>{{ i.status }}</td>
-      <td><p><a href="/adm_delete_station/{{ i.station_name }}" class="btn btn-dark">Remove</button></td>
-      <!--       <input type="Remove" value="Send">  -->
-        <!-- <td>&nbsp;{{ i.area }}</td> -->
-     <!-- <td>&nbsp;{{ i.city }}</td>
-      <td>{{ i.post }}</td>
-      <td>&nbsp;{{ i.district }}</td>
-      <td>&nbsp;{{ i.state }}</td>
-      <td>{{ i.email }}</td>
-      <td>{{ i.phone }}</td> -->
+      <td><p><a href="/adm_delete_station1/{{ i.station_name }}" class="btn btn-dark">Remove</button></td>
       </tr> 
       {%  endfor %}
-  </table>
+  </table>-->
+  <h1>{{username}}</h1><br><br>
+  <h3>Update Charging Station Ports</h3>
+  <form action="{{ url_for('update_ports') }}" method="post">
+      <label for="port_number">Number of Ports available:</label>
+      <input type="text" id="port_number" name="port_number" required><br><br>
+      
+      <label for="port_status">Port Status:</label>
+      <select id="port_status" name="port_status" required>
+        <option value="Active">Active</option>
+        <option value="Under Maintenance">Under Maintenance</option>
+        <option value="Out of Service">Out of Service</option>
+      </select><br><br>
+
+      <button type="submit" onclick="update()">Update port</button><br><br>
+  </form>
+  
+  <h3>Add Emergency Port</h2>
+  <form action="{{ url_for('add_eports') }}" method="post">
+      <label for="new_emergency_port_number">Is emergency port available:</label>
+      <select name="new_port_number1" id="new_port_number1" required><br>
+        <option value="">--Select--</option><br>
+        <option value="yes">yes</option><br>
+      </select><br><br>
+      <!-- <input type="text" id="new_port_number1" name="new_port_number1" required> -->
+      
+      <button type="submit" onclick="save()">save Changes</button><br><br>
+  </form>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
 <script>
@@ -133,6 +149,16 @@ $(document).ready(function() {
   "searching": false // hide search bar
   });
 });
+
+function update(){
+  const port_number = $('port_number').val();
+  const port_status = $('port_status').val();
+}
+
+function save(){
+  const new_port_number1 = $('new_port_number1').val();
+}
+
 </script>
   </form>
 
@@ -147,8 +173,119 @@ $(document).ready(function() {
     <footer>
         <div class="footer-content">
             <h3>footer</h3>
-            <p>&copy; 2023 EV Charging Station Finder. All rights reserved.</p>
         </div>
     </footer>
+
+    <style>
+      /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #4C2D8B;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust size as needed */
+    width: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Page content wrapper styles */
+#page-content-wrapper {
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2C3E50;
+}
+
+/* Footer styles */
+footer {
+    background-color: #4C2D8B;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
 
 </html>
