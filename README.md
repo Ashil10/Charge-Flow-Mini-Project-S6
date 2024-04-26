@@ -1,3 +1,4 @@
+[EV.pdf](https://github.com/Ashil10/Charge-Flow-Mini-Project-S6/files/15129669/EV.pdf)
 # ChargeFlow - Smart Slot Allocation for Urban EV Charging
 
 ChargeFlow is a web application designed to streamline the process of electric vehicle (EV) charging in urban areas. The platform offers both user and station admin dashboards, providing a user-friendly interface for managing EV charging slots efficiently. Users can pre-book specific time slots to avoid unnecessary delays, while charging station admins can update the availability of ports in real-time.
