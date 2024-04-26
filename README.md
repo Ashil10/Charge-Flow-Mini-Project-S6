@@ -1,89 +1,60 @@
-# Werego - Electric Vehicle Charging Station Finder
+# ChargeFlow - Smart Slot Allocation for Urban EV Charging
 
+ChargeFlow is a web application designed to streamline the process of electric vehicle (EV) charging in urban areas. The platform offers both user and station admin dashboards, providing a user-friendly interface for managing EV charging slots efficiently. Users can pre-book specific time slots to avoid unnecessary delays, while charging station admins can update the availability of ports in real-time.
 
-## Overview
+## Features
 
-The advent of electric vehicles (EVs) has ushered in a new era of eco-friendly and sustainable transportation. However, a significant challenge faced by EV owners is the availability of charging infrastructure. To address this issue, Werego is an innovative web-based system that empowers EV owners to locate, access, and reserve charging stations conveniently.
+- **User Dashboard**: Users can access a dashboard to view available charging slots, pre-book time slots, and manage their bookings.
+- **Station Admin Dashboard**: Charging station admins can update the availability of charging ports, view booking details, and manage station operations.
+- **Pre-Booking**: Users can pre-book specific time slots for charging their EVs, ensuring a hassle-free experience.
+- **Location-Based Search**: Users can enter their location, and the platform will display all nearby charging stations within a 50 km radius, sorted by distance.
+- **Emergency Slot**: Premium fast charging services are available through an emergency slot, allowing users to book priority slots for urgent charging needs.
 
-### Key Features
+## Technologies Used
 
-- **Charging Station Search:** Quickly find nearby charging stations by selecting your location from a list. Get detailed information about available stations, including address, city, charge type, and available slots.
+- HTML
+- CSS
+- Python Flask
+- Folium API
 
-- **Charging Station Details:** View comprehensive information about each charging station, making it easy to choose the most suitable one for your needs.
+## Installation
 
-- **Slot Booking:** Reserve available charging slots at your preferred station. Manage your bookings, and even cancel them if your plans change.
+To run ChargeFlow locally, follow these steps:
 
-- **User Management:** Create an account, log in, and access your booking history. User-friendly features like password reset and email verification enhance your experience.
+1. Clone the repository:
 
-- **Admin Panel:** Charging station operators can manage their stations and slots effortlessly through the admin panel. This feature allows operators to add or remove charging stations, update station details, and review booking history.
+```bash
+git clone https://github.com/your-username/chargeflow.git
+```
 
-## Prerequisites
+2. Navigate to the project directory:
 
-Ensure you have the following software and tools installed:
+```bash
+cd chargeflow
+```
 
-- **Technology:** Python
-- **Integrated Development Environment (IDE):** VSCode (or any preferred Python IDE)
-- **Framework:** Flask
-- **Database:** MySQL
+3. Install dependencies:
 
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the Flask application:
+
+```bash
+python app.py
+```
+
+5. Access the application in your web browser at `http://localhost:5000`.
 
 ## Usage
 
-Start the Application: Launch the Werego application.
-
-Search for Charging Stations: Use the search feature to find charging stations near you.
-
-View Station Details: Click on a station to view its details.
-
-Book a Charging Slot: Reserve an available slot at your chosen station.
-
-Admin Features: If you are a charging station operator, log in to the admin panel to manage your stations and slots.
+- Users can sign up/login to access the user dashboard.
+- From the user dashboard, users can view available charging slots, pre-book time slots, and manage their bookings.
+- Station admins can sign up/login to access the station admin dashboard.
+- From the station admin dashboard, admins can update port availability, view booking details, and manage station operations.
 
 
-## screenshots
-Home Page
+## Acknowledgements
 
-![Screenshot 1](screenshot/common/homepage.png)
-
-
-## Admin - Page
-
-![Screenshot 1](screenshot/admin/dashboard.png)
-Admin Dashboard
-
-![Screenshot 2](screenshot/admin/manage_station.png)
-Managing station
-
-![Screenshot 1](screenshot/admin/view_bookings.png)
-View booking
-
-![Screenshot 2](screenshot/admin/view_feedback.png)
-Manage feedback
-
-![Screenshot 2](screenshot/admin/view_user.png)
-Manage users
-
-## User - page
-
-![Screenshot 1](screenshot/user/dashboard.png)
-User Dashboard
-
-![Screenshot 2](screenshot/user/profile.png)
-User Profile Update
-
-![Screenshot 1](screenshot/user/station_search.png)
-Searching Nearby Station
-
-![Screenshot 2](screenshot/user/booking_page.png)
-Booking Page
-
-
-
-## Contributing
-We welcome contributions from the community to improve Werego. To contribute:
-
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes and push them to your fork.
-Submit a pull request to the main repository.
- 
+This Project was done by Felix Sabu ,Aneeth P Biju and myself as part of the MINI PROJECT during the Sixth Semester.
