@@ -7,11 +7,11 @@ VIEW OUR PRESENTATION HERE
 
 ## Features
 
-- **User Dashboard**: Users can access a dashboard to view available charging slots, pre-book time slots, and manage their bookings.
-- **Station Admin Dashboard**: Charging station admins can update the availability of charging ports, view booking details, and manage station operations.
-- **Pre-Booking**: Users can pre-book specific time slots for charging their EVs, ensuring a hassle-free experience.
-- **Location-Based Search**: Users can enter their location, and the platform will display all nearby charging stations within a 50 km radius, sorted by distance.
-- **Emergency Slot**: Premium fast charging services are available through an emergency slot, allowing users to book priority slots for urgent charging needs.
+- *User Dashboard*: Users can access a dashboard to view available charging slots, pre-book time slots, and manage their bookings.
+- *Station Admin Dashboard*: Charging station admins can update the availability of charging ports, view booking details, and manage station operations.
+- *Pre-Booking*: Users can pre-book specific time slots for charging their EVs, ensuring a hassle-free experience.
+- *Location-Based Search*: Users can enter their location, and the platform will display all nearby charging stations within a 50 km radius, sorted by distance.
+- *Emergency Slot*: Premium fast charging services are available through an emergency slot, allowing users to book priority slots for urgent charging needs.
 
 ## Technologies Used
 
@@ -26,29 +26,29 @@ To run ChargeFlow locally, follow these steps:
 
 1. Clone the repository:
 
-```bash
+bash
 git clone https://github.com/Ashil10/Charge-Flow-Mini-Project-S6.git
-```
+
 
 2. Navigate to the project directory:
 
-```bash
+bash
 cd chargeflow
-```
+
 
 3. Install dependencies:
 
-```bash
+bash
 pip install -r requirements.txt
-```
+
 
 4. Run the Flask application:
 
-```bash
+bash
 python app.py
-```
 
-5. Access the application in your web browser at `http://localhost:5000`.
+
+5. Access the application in your web browser at http://localhost:5000.
 
 ## Usage
 
@@ -60,4 +60,4 @@ python app.py
 
 ## Acknowledgements
 
-This Project was done by Felix Sabu ,Aneeth P Biju and myself as part of the MINI PROJECT during the Sixth Semester.
+This Project was done by Aneeth P Biju , K P Ashil and myself as part of the MINI PROJECT during the Sixth Semester.

@@ -92,6 +92,37 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Welcome to your dashboard {{ username }}! </h1>
+        <h2>Upcoming bookings:</h2><br>
+        <form action="" method="POST">
+          <table id="myTable" class="display table table-active" width="700" border="2" >  
+            <thead>     
+          <tr>
+            <th>booking Date</th>
+            <th>Time from</th>
+            <th>Time to</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for booking in data %}
+  <tr>
+    <td>{{ booking.booking_date }}</td>
+    <td>{{ booking.time_from }}</td>
+    <td>{{ booking.time_to }}</td>
+    <td>{{ booking.username }}</td>
+    <td><p><a href="/stn_delete_booking/{{ booking.booking_date }}" class="btn btn-dark">Remove booking</a></p></td>
+  </tr>
+{% endfor %}
+</tbody>
+
+              <tr>
+                  <td colspan="8">Total number of bookings: {{ data|length }}</td>
+              </tr>
+      
+      </table>
+      
+
       </div>
     
      

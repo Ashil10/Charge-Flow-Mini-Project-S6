@@ -294,6 +294,8 @@ def adm_delete_booking(booking_id):
         return '''<script>alert('booking deleted');window.location="/view_booking"</script>'''
     else:
         return redirect('/')
+    
+    
 
 
 
@@ -448,6 +450,23 @@ def station_search():
         return render_template('user/station_search.html', data=nearby_stations_sorted, city=city, charger_type=charger_type, emergency_port=emergency_port)
     else:
         return redirect('/')
+    
+@app.route('/stn_delete_booking/<booking_date>')
+def stn_delete_booking(booking_date):
+    if 'user_type' in session and session['user_type'] == "station":
+        username = session['username'] # get the username from the session
+        db = Db()
+        
+        db.update("update admin_charging_station_list set available_ports=available_ports+1 where station_name=%s",(username,))    
+        
+        # Delete the booking from the table
+        qry = db.delete("delete from bookings WHERE booking_date = %s", (booking_date,))
+         
+        
+        
+        return '''<script>alert('booking deleted');window.location="/station-dashboard"</script>'''
+    else:
+         return redirect('/station-dashboard')    
 
 # ==============from station_search to booking page====================
 @app.route('/booking', methods=['GET', 'POST'])
@@ -570,7 +589,16 @@ def station_dashboard():
     print('session ', session)
     if session['user_type'] == 'station':
         username = session['username'] # get the username from the session
-        return render_template('admin_station/admin-login-dashboard1.html', username=username)
+        db=Db()
+        qry=db.select("select * from bookings INNER JOIN login ON bookings.login_id = login.login_id where station_name=%s",(username,))
+        qry1=db.select("select login_id from bookings where station_name=%s",(username,))
+        login_id=qry1[0]['login_id']
+        print(login_id)
+        
+        qry3=db.select("select username from login where login_id=%s",(login_id,))
+        user=qry3[0]['username']
+        print(user)
+        return render_template('admin_station/admin-login-dashboard1.html', username=username,data=qry,user=user)
     #else:
        # return redirect('/')
 
