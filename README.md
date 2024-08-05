@@ -60,4 +60,4 @@ python app.py
 
 ## Acknowledgements
 
-This Project was done by Aneeth P Biju , K P Ashil and myself as part of the MINI PROJECT during the Sixth Semester.
+This Project was done by Aneeth P Biju , Felix Sabu and myself as part of the MINI PROJECT during the Sixth Semester.
